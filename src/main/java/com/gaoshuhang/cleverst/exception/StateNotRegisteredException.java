@@ -1,4 +1,4 @@
-package com.gaoshuhang.sm.exception;
+package com.gaoshuhang.cleverst.exception;
 
 public class StateNotRegisteredException extends RuntimeException
 {

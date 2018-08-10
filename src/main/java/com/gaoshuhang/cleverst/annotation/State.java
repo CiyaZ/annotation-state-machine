@@ -1,4 +1,4 @@
-package com.gaoshuhang.sm.annotation;
+package com.gaoshuhang.cleverst.annotation;
 
 import java.lang.annotation.*;
 

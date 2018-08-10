@@ -1,7 +1,8 @@
-package demos.test;
+package com.gaoshuhang.cleverst.test;
 
-import com.gaoshuhang.sm.context.Context;
-import com.gaoshuhang.sm.context.ContextFactory;
+import com.gaoshuhang.cleverst.context.Context;
+import com.gaoshuhang.cleverst.context.ContextFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TestState
@@ -9,7 +10,7 @@ public class TestState
 	@Test
 	public void test()
 	{
-		Context<String> context = ContextFactory.createContext("my-context", "demos.test.state");
+		Context<String> context = ContextFactory.createContext("my-context", "com.gaoshuhang.cleverst.test.state");
 		context.setCurrentState(context.getStateByStateName("state-a"));
 		context.request("A");
 		context.request("A");

@@ -1,6 +1,4 @@
-package com.gaoshuhang.sm.model;
-
-import com.gaoshuhang.sm.context.Context;
+package com.gaoshuhang.cleverst.model;
 
 public abstract class AbstractState<T>
 {

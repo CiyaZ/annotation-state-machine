@@ -1,6 +1,6 @@
-# 注解配置状态机
+# 注解配置状态机框架
 
-用注解配置状态机，取代大量 `if..else if...else`，用于实现桌面程序、安卓程序工作流，或者微信公众号等web应用，或者游戏AI等。 
+`CleverState`是一个用注解配置的工作状态控制框架，用于实现桌面程序、安卓程序、微信公众号等web应用工作流，以及游戏AI等。 
 
 ## demo
 
@@ -9,8 +9,8 @@ com.example.Main
 ```java
 package com.example;
 
-import com.gaoshuhang.sm.context.Context;
-import com.gaoshuhang.sm.context.ContextFactory;
+import Context;
+import ContextFactory;
 
 public class Main
 {
@@ -37,8 +37,8 @@ com.example.states.StateA
 ```java
 package com.example.states;
 
-import com.gaoshuhang.sm.annotation.State;
-import com.gaoshuhang.sm.model.AbstractState;
+import State;
+import AbstractState;
 
 @State(stateName = "state-a")//this annotation defines state name
 public class StateA extends AbstractState<String>//all message type should be the same in a context
@@ -67,8 +67,8 @@ com.example.states.StateB
 ```java
 package com.example.states;
 
-import com.gaoshuhang.sm.annotation.State;
-import com.gaoshuhang.sm.model.AbstractState;
+import State;
+import AbstractState;
 
 @State(stateName = "state-b")
 public class StateB extends AbstractState<String>
@@ -87,8 +87,8 @@ com.example.states.StateC
 ```java
 package com.example.states;
 
-import com.gaoshuhang.sm.annotation.State;
-import com.gaoshuhang.sm.model.AbstractState;
+import State;
+import AbstractState;
 
 @State(stateName = "state-c")
 public class StateC extends AbstractState<String>
@@ -102,15 +102,9 @@ public class StateC extends AbstractState<String>
 }
 ```
 
-## 依赖
-
-```groovy
-compile group: 'org.reflections', name: 'reflections', version: '0.9.11'
-```
-
 ## 构建
 
 ```shell
-gradle build
+mvn package
 ```
 
