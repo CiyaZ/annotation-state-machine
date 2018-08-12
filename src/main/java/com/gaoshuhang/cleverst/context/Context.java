@@ -39,7 +39,7 @@ public class Context<T>
 			catch (InstantiationException | IllegalAccessException e)
 			{
 				e.printStackTrace();
-				throw new StateCreateException("State class initialize failed.");
+				throw new StateCreateException("状态类实例化失败");
 			}
 		}
 	}
@@ -91,7 +91,7 @@ public class Context<T>
 		AbstractState<T> targetState = abstractStateMap.get(resultState);
 		if(targetState == null)
 		{
-			throw new StateNotRegisteredException("Target state class not registered.");
+			throw new StateNotRegisteredException("目标状态类未注册到上下文中");
 		}
 		else
 		{
