@@ -30,7 +30,7 @@ public class Context<T>
 		for(Class<?> stateClass : annotated)
 		{
 			State stateAnnotation = stateClass.getAnnotation(State.class);
-			String stateName = stateAnnotation.stateName();
+			String stateName = stateAnnotation.value();
 
 			try
 			{

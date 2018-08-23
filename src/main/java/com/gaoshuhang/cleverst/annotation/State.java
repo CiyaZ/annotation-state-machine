@@ -13,5 +13,5 @@ public @interface State
 	/**
 	 * 状态名
 	 */
-	String stateName();
+	String value();
 }

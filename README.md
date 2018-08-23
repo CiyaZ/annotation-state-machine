@@ -40,7 +40,7 @@ package com.example.states;
 import State;
 import AbstractState;
 
-@State(stateName = "state-a")//this annotation defines state name
+@State("state-a")//this annotation defines state name
 public class StateA extends AbstractState<String>//all message type should be the same in a context
 {
 	@Override
@@ -70,7 +70,7 @@ package com.example.states;
 import State;
 import AbstractState;
 
-@State(stateName = "state-b")
+@State("state-b")
 public class StateB extends AbstractState<String>
 {
 	@Override
@@ -90,7 +90,7 @@ package com.example.states;
 import State;
 import AbstractState;
 
-@State(stateName = "state-c")
+@State("state-c")
 public class StateC extends AbstractState<String>
 {
 	@Override

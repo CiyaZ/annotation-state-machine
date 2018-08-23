@@ -3,7 +3,7 @@ package com.gaoshuhang.cleverst.test.state;
 import com.gaoshuhang.cleverst.annotation.State;
 import com.gaoshuhang.cleverst.model.AbstractState;
 
-@State(stateName = "state-b")
+@State("state-b")
 public class StateB extends AbstractState<String>
 {
 	@Override
