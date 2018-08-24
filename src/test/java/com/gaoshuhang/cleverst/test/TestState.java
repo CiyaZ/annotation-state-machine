@@ -2,7 +2,6 @@ package com.gaoshuhang.cleverst.test;
 
 import com.gaoshuhang.cleverst.context.Context;
 import com.gaoshuhang.cleverst.context.ContextFactory;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class TestState
